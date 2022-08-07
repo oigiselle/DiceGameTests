@@ -7,7 +7,7 @@ namespace DiceGameTests
 
         public int Dice()
         {
-          
+
             int currentNumberUP = Roll(6);
 
             return currentNumberUP;
@@ -16,26 +16,26 @@ namespace DiceGameTests
 
         //1 argument dice
         public int Dice(int numberOfSides)
-        {         
-                if (numberOfSides <= 0) { return 0; };
+        {
+            if (numberOfSides <= 0) { return 0; };
 
-                int currentNumberUP = Roll(numberOfSides);
+            int currentNumberUP = Roll(numberOfSides);
 
-                return currentNumberUP;
+            return currentNumberUP;
         }
 
         //2 arguments dice
         public string Dice(int numberOfSides, int numberOfRolls)
         {
-            
+
 
             List<int> list = new List<int>();
 
-            if (numberOfSides <= 0 || numberOfRolls <=0 )
+            if (numberOfSides <= 0 || numberOfRolls <= 0)
             {
 
                 string message = "Error";
-                return message ;
+                return message;
             }
 
             for (int i = 0; i < numberOfRolls; i++)
@@ -51,7 +51,7 @@ namespace DiceGameTests
                 result += i.ToString() + " ";
             }
 
-                return result.Trim();
+            return result.Trim();
 
 
         }
@@ -67,5 +67,5 @@ namespace DiceGameTests
 
         }
 
-    }   
+    }
 }

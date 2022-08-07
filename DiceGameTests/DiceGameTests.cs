@@ -1,6 +1,3 @@
-using DiceGameTests;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 namespace DiceGameTests
 {
 

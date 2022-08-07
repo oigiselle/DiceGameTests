@@ -5,6 +5,10 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceGameTests", "DiceGameTests\DiceGameTests.csproj", "{3F3968C7-1CE7-40E7-A7E7-65E568CA51E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRoller.Android", "DiceRoller\DiceRoller.Android\DiceRoller.Android.csproj", "{F983BBEA-5DC9-4AF5-A219-95280AEC234A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRoller", "DiceRoller\DiceRoller\DiceRoller.csproj", "{6FB4C034-4029-4826-878A-17C763DADE39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{3F3968C7-1CE7-40E7-A7E7-65E568CA51E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F3968C7-1CE7-40E7-A7E7-65E568CA51E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F3968C7-1CE7-40E7-A7E7-65E568CA51E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F983BBEA-5DC9-4AF5-A219-95280AEC234A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F983BBEA-5DC9-4AF5-A219-95280AEC234A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F983BBEA-5DC9-4AF5-A219-95280AEC234A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F983BBEA-5DC9-4AF5-A219-95280AEC234A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F983BBEA-5DC9-4AF5-A219-95280AEC234A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F983BBEA-5DC9-4AF5-A219-95280AEC234A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6FB4C034-4029-4826-878A-17C763DADE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB4C034-4029-4826-878A-17C763DADE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB4C034-4029-4826-878A-17C763DADE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB4C034-4029-4826-878A-17C763DADE39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
