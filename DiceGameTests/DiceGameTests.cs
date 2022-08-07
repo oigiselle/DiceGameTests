@@ -54,4 +54,41 @@ namespace DiceGameTests
             Assert.IsTrue(result != 0);
         }
 
+
+        [TestMethod]
+        public void OneArgumentDieHasLessThanOrIsEqualTheArgumentNumberOfSides()
+        {
+            int result = dice.Dice(10);
+
+            Assert.IsTrue(result <= 10);
+        }
+
+        [TestMethod]
+        [DataRow(-1)]
+        [DataRow(0)]
+        [DataRow(-55)]
+        public void OneArgumentDieNegativeNumberIsNegativeReturnsZero(int sides)
+        {
+            int result = dice.Dice(sides);
+
+            Assert.AreEqual(0, result);
+        }
+
+        [TestMethod]
+        [DataRow(1)]
+        [DataRow(5)]
+        [DataRow(20)]
+
+        public void OneArgumentDieIsBetween1andNumberOfSides(int sides)
+        {
+            int initialize = dice.Dice(sides);
+
+            bool isGreaterOrEqualToZero = initialize > 0;
+            bool isLessOrEqualToSix = initialize <= sides;
+
+            Assert.IsTrue(isLessOrEqualToSix && isGreaterOrEqualToZero);
+        }
+
+
+
 }
