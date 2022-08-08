@@ -109,20 +109,36 @@ namespace DieTests
         }
 
         [TestMethod]
-        public void DieHasCustomName()
+        [DataRow(3, "d3")]
+        [DataRow(4, "d4")]
+        [DataRow(8, "d8")]
+        [DataRow(10, "d10")]
+        [DataRow(12, "d12")]
+        [DataRow(20, "d20")]
+        public void DieHasCustomName(int sides, string name)
         {
-
+            Die d = new Die(sides);
+            d.Name.Should().Be(name);
         }
 
         [TestMethod]
-        public void NumSidesShouldNotBeNegative()
+        [DataRow(-3)]
+        [DataRow(-4)]
+        [DataRow(-8)]
+        [DataRow(-10)]
+        [DataRow(-12)]
+        [DataRow(-20)]
+
+        public void NumSidesShouldNotBeNegative(int sides)
         {
+            def.Should().NotBe(sides > 0);
 
         }
 
         [TestMethod]
         public void SetSideUpChangesSide()
         {
+
 
         }
     }
