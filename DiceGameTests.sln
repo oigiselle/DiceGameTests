@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRoller.Android", "DiceR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRoller", "DiceRoller\DiceRoller\DiceRoller.csproj", "{64A29407-B38B-4626-A1D2-9FB28142BA39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DieTests", "DieTests\DieTests.csproj", "{AE9DAE12-483D-4EB7-AEAD-BB5C8261ECC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{64A29407-B38B-4626-A1D2-9FB28142BA39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64A29407-B38B-4626-A1D2-9FB28142BA39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64A29407-B38B-4626-A1D2-9FB28142BA39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE9DAE12-483D-4EB7-AEAD-BB5C8261ECC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE9DAE12-483D-4EB7-AEAD-BB5C8261ECC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE9DAE12-483D-4EB7-AEAD-BB5C8261ECC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE9DAE12-483D-4EB7-AEAD-BB5C8261ECC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
