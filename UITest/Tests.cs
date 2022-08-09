@@ -5,10 +5,11 @@ using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
+
 namespace UITest
 {
     [TestFixture(Platform.Android)]
-    [TestFixture(Platform.iOS)]
+    
     public class Tests
     {
         IApp app;
@@ -26,11 +27,24 @@ namespace UITest
         }
 
         [Test]
-        public void WelcomeTextIsDisplayed()
+        [Category("UI")]
+        public void PrompedLabelIsDisplayed()
         {
-            AppResult[] results = app.WaitForElement(c => c.Marked("Welcome to Xamarin.Forms!"));
+            AppResult[] results = app.WaitForElement(c => c.Marked("Select a die:"));
 
             Assert.IsTrue(results.Any());
+        }
+
+        [Test]
+        [Category("UI")]
+        public void OptionsAreDisplayed()
+        {
+            Assert.IsTrue(app.Query(c => c.Marked("d4")).Any());
+            Assert.IsTrue(app.Query(c => c.Marked("d6")).Any());
+            Assert.IsTrue(app.Query(c => c.Marked("d8")).Any());
+            Assert.IsTrue(app.Query(c => c.Marked("d10")).Any());
+            Assert.IsTrue(app.Query(c => c.Marked("d12")).Any());
+            Assert.IsTrue(app.Query(c => c.Marked("d20")).Any());
         }
     }
 }
