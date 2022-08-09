@@ -6,7 +6,7 @@ namespace UITest
 {
     public class AppInitializer
     {
-        public static IApp StartApp(Platform platform)
+        public static IApp StartApp()
         {
   
                 return ConfigureApp
