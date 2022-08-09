@@ -26,15 +26,18 @@ namespace DiceRoller.Models
 
         }
 
-        
-
-
-
 
         public void Roll()
         {
             Random random = new Random();
             CurrentSide = random.Next(NumSides) + 1;
+        }
+
+        public int SetSideUp(int newSideUp)
+        {
+            if (newSideUp >= 1 && newSideUp <= NumSides)
+                this.CurrentSide = newSideUp;
+            return newSideUp;
         }
 
     }

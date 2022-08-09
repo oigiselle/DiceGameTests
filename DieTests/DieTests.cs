@@ -117,6 +117,7 @@ namespace DieTests
         [DataRow(20, "d20")]
         public void DieHasCustomName(int sides, string name)
         {
+
             Die d = new Die(sides);
             d.Name.Should().Be(name);
         }
@@ -136,9 +137,16 @@ namespace DieTests
         }
 
         [TestMethod]
-        public void SetSideUpChangesSide()
+        [DataRow(6, 5)]
+        [DataRow(10, 2)]
+        [DataRow(8, 5)]
+
+        public void SetSideUpChangesSide(int sides, int setSide)
         {
 
+            Die dice = new Die(sides);
+            int result = dice.SetSideUp(setSide);
+            result.Should().Be(setSide);
 
         }
     }

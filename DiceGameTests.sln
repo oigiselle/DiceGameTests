@@ -5,9 +5,11 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRoller.Android", "DiceRoller\DiceRoller.Android\DiceRoller.Android.csproj", "{2472E9B9-F4AE-4629-AD6A-BE54D2E3565A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRoller", "DiceRoller\DiceRoller\DiceRoller.csproj", "{64A29407-B38B-4626-A1D2-9FB28142BA39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiceRoller", "DiceRoller\DiceRoller\DiceRoller.csproj", "{64A29407-B38B-4626-A1D2-9FB28142BA39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DieTests", "DieTests\DieTests.csproj", "{AE9DAE12-483D-4EB7-AEAD-BB5C8261ECC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DieTests", "DieTests\DieTests.csproj", "{AE9DAE12-483D-4EB7-AEAD-BB5C8261ECC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITest", "UITest\UITest.csproj", "{C514CDCF-FECE-4AB2-AABB-96BE1C29C834}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{AE9DAE12-483D-4EB7-AEAD-BB5C8261ECC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE9DAE12-483D-4EB7-AEAD-BB5C8261ECC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE9DAE12-483D-4EB7-AEAD-BB5C8261ECC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C514CDCF-FECE-4AB2-AABB-96BE1C29C834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C514CDCF-FECE-4AB2-AABB-96BE1C29C834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C514CDCF-FECE-4AB2-AABB-96BE1C29C834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C514CDCF-FECE-4AB2-AABB-96BE1C29C834}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
