@@ -136,16 +136,9 @@ namespace DieTests
         }
 
         [TestMethod]
-        [DataRow(6, 5)]
-        [DataRow(10,2)]
-        [DataRow(8, 5)]
-
-        public void SetSideUpChangesSide(int sides, int setSide)
+        public void SetSideUpChangesSide()
         {
 
-            Die dice = new Die(sides);
-            int result = dice.SetSideUp(setSide);
-            result.Should().Be(setSide);
 
         }
     }

@@ -26,12 +26,7 @@ namespace DiceRoller.Models
 
         }
 
-        public int SetSideUp(int newSideUp)
-        {
-            if (newSideUp >=1 && newSideUp <=NumSides)
-                this.CurrentSide = newSideUp;
-            return newSideUp;
-        }
+        
 
 
 
