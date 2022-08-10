@@ -39,8 +39,8 @@ namespace DiceRoller
                 Die chosenDice2 = new Die(4);
                 string result1 = chosenDice1.CurrentSide.ToString();
                 string result2 = chosenDice2.CurrentSide.ToString();
-                Result1.Text = "Dice1: " + result1;
-                Result2.Text = "Dice2: " + result2;
+                Result1.Text = "Die 1: " + result1;
+                Result2.Text = "Die 2: " + result2;
             }
             else if (d6.IsChecked)
             {
@@ -48,8 +48,8 @@ namespace DiceRoller
                 Die chosenDice2 = new Die();
                 string result1 = chosenDice1.CurrentSide.ToString();
                 string result2 = chosenDice2.CurrentSide.ToString();
-                Result1.Text = "Dice1: " + result1;
-                Result2.Text = "Dice2: " + result2;
+                Result1.Text = "Die 1: " + result1;
+                Result2.Text = "Die 2: " + result2;
             }
             else if (d8.IsChecked)
             {
@@ -57,8 +57,8 @@ namespace DiceRoller
                 Die chosenDice2 = new Die(8);
                 string result1 = chosenDice1.CurrentSide.ToString();
                 string result2 = chosenDice2.CurrentSide.ToString();
-                Result1.Text = "Dice1: " + result1;
-                Result2.Text = "Dice2: " + result2;
+                Result1.Text = "Die 1: " + result1;
+                Result2.Text = "Die 2: " + result2;
             }
             else if (d10.IsChecked)
             {
@@ -66,8 +66,8 @@ namespace DiceRoller
                 Die chosenDice2 = new Die(10);
                 string result1 = chosenDice1.CurrentSide.ToString();
                 string result2 = chosenDice2.CurrentSide.ToString();
-                Result1.Text = "Dice1: " + result1;
-                Result2.Text = "Dice2: " + result2;
+                Result1.Text = "Die 1: " + result1;
+                Result2.Text = "Die 2: " + result2;
             }
             else if (d12.IsChecked)
             {
@@ -75,8 +75,8 @@ namespace DiceRoller
                 Die chosenDice2 = new Die(12);
                 string result1 = chosenDice1.CurrentSide.ToString();
                 string result2 = chosenDice2.CurrentSide.ToString();
-                Result1.Text = "Dice1: " + result1;
-                Result2.Text = "Dice2: " + result2;
+                Result1.Text = "Die 1: " + result1;
+                Result2.Text = "Die 2: " + result2;
             }
             else if (d20.IsChecked)
             {
@@ -84,12 +84,12 @@ namespace DiceRoller
                 Die chosenDice2 = new Die(20);
                 string result1 = chosenDice1.CurrentSide.ToString();
                 string result2 = chosenDice2.CurrentSide.ToString();
-                Result1.Text = "Dice1: " + result1;
-                Result2.Text = "Dice2: " + result2;
+                Result1.Text = "Die 1: " + result1;
+                Result2.Text = "Die 2: " + result2;
             }
             else
             {
-                Result1.Text = "Select a dice to roll";
+                Result1.Text = "Select a die to roll";
             }
 
 
@@ -136,7 +136,7 @@ namespace DiceRoller
             }
             else
             {
-                Result1.Text = "Select a dice to roll";
+                Result1.Text = "Select a die to roll";
             }
 
 

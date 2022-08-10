@@ -85,7 +85,46 @@ namespace UITest
             Assert.IsTrue(results.Length == 2);
         }
 
-        
+        [Test]
+        [Category("UI")]
+        public void LabelResult1CanBeDisplayed()
+        {
+            app.Tap(c => c.Property("text").Contains("Display one result"));
+
+            AppResult[] results = app.Query(c => c.Property("text").Contains("roll"));
+
+            Assert.IsTrue(results.Length > 0);
+
+        }
+
+        [Test]
+        [Category("UI")]
+        public void LabelResult2CanBeDisplayed()
+        {
+            app.Tap(c => c.Marked("d4"));
+            app.Tap(c => c.Property("text").Contains("Display two results"));
+
+            AppResult[] results = app.Query(c => c.Property("text").Contains("Die 2"));
+
+            Assert.IsTrue(results.Length > 0);
+
+        }
+
+        [Test]
+        [Category("UI")]
+        public void LabelResult1DisplayCorrectRange()
+        {
+
+        }
+
+        [Test]
+        [Category("UI")]
+        public void LabelResult2DisplayCorrectRange()
+        {
+
+        }
+
+
 
 
 
