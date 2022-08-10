@@ -141,6 +141,26 @@ namespace DieTests
         [DataRow(10, 2)]
         [DataRow(8, 5)]
 
+        public void SetSideUpChangesIsValid(int sides, int setSide)
+        {
+
+            Die dice = new Die(sides);
+            dice.GetCurrentSide().Should().BeInRange(1, sides);
+            if(setSide  >= 1 && setSide <= sides)
+            dice.SetSideUp(setSide);
+            dice.GetCurrentSide().Should().Be(setSide);
+
+        }
+
+
+
+
+
+        [TestMethod]
+        [DataRow(6, 5)]
+        [DataRow(10, 2)]
+        [DataRow(8, 5)]
+
         public void SetSideUpChangesSide(int sides, int setSide)
         {
 
@@ -149,5 +169,7 @@ namespace DieTests
             result.Should().Be(setSide);
 
         }
+
+        
     }
 }

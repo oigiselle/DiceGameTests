@@ -40,5 +40,10 @@ namespace DiceRoller.Models
             return newSideUp;
         }
 
+        public int GetCurrentSide()
+        {
+            return this.CurrentSide;
+        }
+
     }
 }

@@ -84,5 +84,10 @@ namespace UITest
             AppResult[] results = app.Query(c => c.Property("text").Contains("Display "));
             Assert.IsTrue(results.Length == 2);
         }
+
+        
+
+
+
     }
 }
